@@ -24,7 +24,7 @@ function App() {
   const realizarCalculo = async () => {
     if (!fsCalculado) return alert("Ingrese el FS");
     try {
-      const resp = await axios.post('http://127.0.0.1:5000/calcular', {
+      const resp = await axios.post('https://relavesminerosback.onrender.com/calcular', {
         fs_calculado: fsCalculado,
         puntajes: puntajes
       });
