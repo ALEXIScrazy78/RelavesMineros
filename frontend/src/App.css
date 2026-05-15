@@ -1,0 +1,102 @@
+:root {
+  --mining-dark: #2c3e50;     
+  --mining-iron: #546e7a;     
+  --safety-orange: #e67e22;
+  --rock-light: #342caf;
+  --border-color: #bdc3c7;
+  --success-green: #27ae60;
+}
+
+body {
+  background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.5)), 
+                    url('https://sanmartin.com/wp-content/uploads/2024/10/DJI_20240928102237_0197_D-2048x1152.jpg'); 
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-radius: 8px;
+}
+
+.header-mining {
+  border-bottom: 4px solid var(--safety-orange);
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  color: var(--mining-dark);
+  text-transform: uppercase;
+}
+
+.header-mining h1 {
+  margin: 0;
+  padding: 10px 0;
+  line-height: 1.4;
+  font-size: 2.2rem;
+  overflow: visible;
+  color: white;
+}
+
+
+.mining-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--mining-iron);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(17, 173, 200, 0.05);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.mining-button {
+  background-color: var(--mining-dark);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.mining-button:hover {
+  background-color: var(--safety-orange);
+}
+
+/* Cuadros de Resultados */
+.result-box {
+  border-radius: 4px;
+  padding: 20px;
+  color: white;
+}
+
+.result-nbr { background-color: var(--mining-iron); }
+.result-aragao { background-color: var(--mining-dark); }
+
+/* Quitar flechas en Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Quitar flechas en Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
